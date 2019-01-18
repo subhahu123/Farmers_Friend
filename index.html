@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Farmer's Friend</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -14,10 +15,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <!------adding css classes ----->
 <style type="text/css">
-    #login-form {
-
-    }
+   .nav-item {
+   	font-size: 14px;
+   	font-weight: 600;
+   }
+   #nav-link-user {
+   	color: #FFFFFF;
+   }
+   #login-form {
+   	padding-top: 15px;
+   	padding-bottom: 2px;
+   	padding-left: 15px;
+   	padding-right: 15px;
+   }
+   .form-control-user {
+   	margin-bottom: 10px;
+   }
 </style>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <body>
@@ -26,7 +41,7 @@
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 		<!-----Website Logo------>
 		<a class="navbar-brand" href="#">
-			<img src="logo.png" height="45px">
+			<img src="logo2.png" height="45px">
 		</a>
 		<form class="form-inline" action="/action_page.php">
 			<input class="form-control mr-sm-2" type="text" placeholder="search">
@@ -37,45 +52,53 @@
 			
 			<!------Website Navigation Feature----->
 			<li class="nav-item">
-				<a href="#" class="nav-link">
+				<a href="#" class="nav-link" id="nav-link-user">
 					Home
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">
+				<a href="#" class="nav-link" id="nav-link-user">
 					Crops
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">
+				<a href="#" class="nav-link" id="nav-link-user">
 					Fertilizers
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">
+				<a href="#" class="nav-link" id="nav-link-user">
 					Pesticides
 				</a>
 			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link" id="nav-link-user">
+					About Us
+				</a>
+			</li>
 			<li class="nav-item dropdown">
-				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+				<a href="#" class="nav-link dropdown-toggle" id="nav-link-user" data-toggle="dropdown">
 					Register
 				</a>
-				<div class="dropdown-menu" id="login-form">
-					<input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name">
-					<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name">
-					<input type="text" name="identity" class="form-control" id="identity" placeholder="Identity No.">
-					<input type="number" name="number" class="form-control" id="number" placeholder="Mobile Number">
-					<button class="btn btn-success">Create An Account</button>
+				<div class="dropdown-menu">
+					<div class="form-group" id="login-form">
+						<input type="text" name="firstName" class="form-control form-control-user" id="firstName" placeholder="First Name">
+					    <input type="text" name="lastName" class="form-control form-control-user" id="lastName" placeholder="Last Name">
+					    <input type="text" name="username" class="form-control form-control-user" id="username" placeholder="Username">
+					    <input type="text" name="identity" class="form-control form-control-user" id="identity" placeholder="Identity No.">
+					    <input type="number" name="number" class="form-control form-control-user" id="number" placeholder="Mobile Number">
+					    <button class="btn btn-success">Create An Account</button>
+					</div>					
 				</div>
 			</li>
 			<li class="nav-item dropdown">
-				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >
+				<a href="#" class="nav-link dropdown-toggle" id="nav-link-user" data-toggle="dropdown" >
 					Login
 				</a>
-				<div class="dropdown-menu" id="login-form">
-						<div class="form-group">
-							<input type="text" name="username" class="form-control" id="username" placeholder="username">
-							<input type="password" name="password" class="form-control" id="password" placeholder="password">
+				<div class="dropdown-menu">
+						<div class="form-group" id="login-form">
+							<input type="text" name="username" class="form-control form-control-user" id="username" placeholder="Username">
+							<input type="password" name="password" class="form-control form-control-user" id="password" placeholder="Password">
 							<button class="btn btn-success" class="form-control">Log In</button>
 						</div>
 					</form>
