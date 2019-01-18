@@ -2,4 +2,4 @@
 
 ## A project for the smart india hackathon For farmers
 
-![Demo_version](Demo_version.jpg)
+![Demo_version](Demo_version.png)
